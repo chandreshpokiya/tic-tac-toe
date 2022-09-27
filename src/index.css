@@ -114,6 +114,7 @@ code {
       padding: 15px;
       display: flex;
       align-items: center;
+      line-height: 0px;
       justify-content: center;
   }
 
