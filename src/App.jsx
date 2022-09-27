@@ -17,6 +17,7 @@ function App() {
     strings[index] = isXChance ? "X" : "O";
     setGameState(strings);
     setIsXChance(!isXChance);
+    setOpenModal(false)
   };
 
   useEffect(() => {
