@@ -1,0 +1,43 @@
+.w-modal{
+    background-color: #BBCFDD;
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+color: red;
+    display: flex;
+    align-items: center;
+}
+
+.modalRight{
+    padding-inline: 50px;
+    min-width: fit-content;
+}
+
+.modalLeft{
+    width: 50%;
+}
+.modalLeft img{
+    width: 100%;
+}
+
+.modalRight p{
+    font-weight: 600;
+    color: purple;
+    font-size: 36px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .modalRight{
+        padding-inline: 20px;
+    }
+    .modalRight p{
+        font-size: 20px;
+    }
+  }
