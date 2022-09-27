@@ -13,11 +13,11 @@ function App() {
   // const [winner, setWinner] = useState(null);
 
   const onSquareClicked = (index) => {
+    setOpenModal(false)
     let strings = Array.from(gameState);
     strings[index] = isXChance ? "X" : "O";
     setGameState(strings);
     setIsXChance(!isXChance);
-    setOpenModal(false)
   };
 
   useEffect(() => {
