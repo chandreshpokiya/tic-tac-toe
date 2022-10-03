@@ -3,7 +3,7 @@ import Modal from "./components/Modal/Modal";
 import SquareCompo from "./components/Squarecompo";
 
 const initialState = ["", "", "", "", "", "", "", "", ""];
-
+import wgif from "./assets/images/winner.gif";
 var finalWinner = '';
 
 function App() {
@@ -26,7 +26,6 @@ function App() {
     // setWinner(tempwinner);
     // console.log(winner)
     finalWinner = winner;
-
     if (winner) {
       // alert("Winner: " + winner);
       setOpenModal(true);
@@ -55,7 +54,7 @@ function App() {
         // setWinner(gameState[a])
         // console.log(winner)
         return gameState[a];
-      }
+      } 
     }
     return null;
   };
@@ -127,7 +126,7 @@ function App() {
         <p>Created by Chandresh Pokiya</p>
       </div>
       {openModal ? (
-        <Modal winner={finalWinner}
+        <Modal winner={finalWinner} src={wgif}
           onClick={() => {
             setOpenModal(false);
           }}

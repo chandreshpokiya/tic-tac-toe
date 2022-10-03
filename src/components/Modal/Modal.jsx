@@ -1,11 +1,11 @@
 import "./modal.css";
-import wgif from "../../images/winner.gif";
 
-export default function Modal({ winner, onClick }) {
+
+export default function Modal({ winner, onClick, src }) {
   return (
     <div className="w-modal">
       <div className="modalLeft">
-        <img src={wgif} alt="" />
+        <img src={src} alt="" />
       </div>
       <div className="modalRight">
         <p>Winner is {winner}</p>
